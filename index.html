@@ -1,0 +1,70 @@
+<!-- 1. Declaración del tipo de documento HTML -->
+<!DOCTYPE html>
+
+<!-- 2. Etiqueta de apertura del documento HTML -->
+<html lang="es">
+  <!-- 3. Etiqueta de apertura de la cabeza del documento HTML -->
+  <head>
+    <!-- 4. Etiqueta de meta que establece el conjunto de caracteres para el documento HTML -->
+    <meta charset="UTF-8">
+    <!-- 5. Etiqueta de meta que establece la relación entre el documento HTML y la ventana del navegador -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 6. Etiqueta de título del documento HTML -->
+    <title>Formulario con Exportación a Excel</title>
+    <!-- 7. Etiqueta de enlace a un archivo CSS que se utiliza para estilar el documento HTML -->
+    <link rel="stylesheet" href="/EjerciciosJS/Css/style.css">
+  </head>
+
+  <!-- 8. Etiqueta de apertura del cuerpo del documento HTML -->
+  <body>
+    <!-- 9. Etiqueta de encabezado de nivel 1 que muestra un título -->
+    <h1>Formulario de Recolección de Información</h1>
+    <!-- 10. Etiqueta de formulario que se utiliza para recolectar información del usuario -->
+    <form id="formulario">
+      <!-- 11. Etiqueta de label que muestra un texto de ayuda para el campo de texto -->
+      <label for="nombre">Nombre:</label>
+      <!-- 12. Etiqueta de input que se utiliza para recolectar el nombre del usuario -->
+      <input type="text" id="nombre" name="nombre" required><br>
+
+      <!-- 13. Etiqueta de label que muestra un texto de ayuda para el campo de correo electrónico -->
+      <label for="email">Correo Electrónico:</label>
+      <!-- 14. Etiqueta de input que se utiliza para recolectar el correo electrónico del usuario -->
+      <input type="email" id="email" name="email" required><br>
+
+      <!-- 15. Etiqueta de label que muestra un texto de ayuda para el campo de teléfono -->
+      <label for="telefono">Teléfono:</label>
+      <!-- 16. Etiqueta de input que se utiliza para recolectar el teléfono del usuario -->
+      <input type="tel" id="telefono" name="telefono"><br>
+
+      <!-- 17. Etiqueta de botón que se utiliza para enviar la información recolectada -->
+      <button type="submit">Enviar</button>
+    </form>
+
+    <!-- 18. Etiqueta de encabezado de nivel 2 que muestra un título -->
+    <h2>Datos Recolectados</h2>
+    <!-- 19. Etiqueta de tabla que se utiliza para mostrar los datos recolectados -->
+    <table id="tabla">
+      <!-- 20. Etiqueta de encabezado de la tabla que muestra los títulos de las columnas -->
+      <thead>
+        <tr>
+          <!-- 21. Etiqueta de encabezado de la tabla que muestra el título de la primera columna -->
+          <th>Nombre</th>
+          <!-- 22. Etiqueta de encabezado de la tabla que muestra el título de la segunda columna -->
+          <th>Correo Electrónico</th>
+          <!-- 23. Etiqueta de encabezado de la tabla que muestra el título de la tercera columna -->
+          <th>Teléfono</th>
+        </tr>
+      </thead>
+      <!-- 24. Etiqueta de cuerpo de la tabla que se utiliza para mostrar los datos recolectados -->
+      <tbody id="tablaCuerpo"></tbody>
+    </table>
+
+    <!-- 25. Etiqueta de botón que se utiliza para exportar los datos recolectados a un archivo de Excel -->
+    <button class="ex" id="exportarExcel">Exportar a Excel</button>
+
+    <!-- 26. Etiqueta de script que se utiliza para cargar el archivo script.js -->
+    <script src="/EjerciciosJS/JS/script.js"></script>
+    <!-- 27. Etiqueta de script que se utiliza para cargar la biblioteca xlsx -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+  </body>
+</html>

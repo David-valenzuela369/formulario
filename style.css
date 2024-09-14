@@ -1,0 +1,73 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 25px;
+    background-color: beige;
+}
+h1,h2{
+    text-align: center;
+}
+form {
+    border-radius: 20px;
+    width: 400px;
+    margin: auto;
+    background-color: bisque;
+    padding: 30px;
+}
+label{
+    display: block;
+    margin: 15px 0 8px;
+}
+input{
+    width: 90%;
+    padding: 12px; /* espacio interno */
+    margin: 5px 0 10px;
+    border: 2px solid salmon;
+    border-radius: 15px;
+}
+button{
+    display: block;
+    width: 30%;
+    padding: 10px;
+    background-color: rgb(214, 175, 117);
+    color: black;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+button:hover{
+    background-color:rgb(104, 101, 97);
+    color: whitesmoke;
+    text-decoration: underline;
+}
+table{
+    width: 60%;
+    margin-top: 15px;
+    border-collapse: collapse;
+    text-align: center;
+    margin-left: 300px;
+}
+th, td{
+    padding: 10px;
+    border:  2px solid goldenrod;
+}
+th{
+    text-align: justify;
+}
+.ex{
+    margin-left: 480px;
+    display: block;
+    width: 30%;
+    padding: 10px;
+    background-color: rgb(214, 175, 117);
+    color: black;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.ex:hover{
+    background-color:rgb(104, 101, 97);
+    color: whitesmoke;
+    text-decoration: underline;
+}
